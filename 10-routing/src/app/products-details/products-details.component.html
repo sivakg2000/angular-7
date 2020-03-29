@@ -1,0 +1,15 @@
+<h3>
+Selected Product id is {{productId}}
+</h3>
+
+<button (click)="showOverview()">Overview</button>
+<button (click)="showPrice()">Price</button>
+
+<br>
+<router-outlet></router-outlet>
+<br>
+
+<button (click)="goPrevious()">Previous</button>
+<button (click)="goNext()">Next</button>
+<br>
+<button (click)="goBack()">Back</button>
