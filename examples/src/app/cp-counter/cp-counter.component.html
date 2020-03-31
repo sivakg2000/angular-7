@@ -1,0 +1,26 @@
+<div class="container">
+  <section class="timer-counter-label">
+    <div *ngIf="counter" [ngClass]="{blink: !running}">
+      <span *ngIf="showForward"><span>{{minutes}}:</span><span>{{seconds}}:</span>
+        <span>{{milliseconds}}</span></span>
+
+      <!-- <span class="blink timer-start-text">Press Start</span> -->
+      <!-- <br> -->
+      <span *ngIf="showBackward"><span>{{rMinutes}}:</span><span>{{rSeconds}}</span>
+        <span> </span></span>
+    </div>
+  </section>
+  <div class="timer-button-container" *ngIf="showTimerControls">
+    <button class="timer-button" (click)="startTimer()">
+      {{ startText }}
+    </button>
+    <button [disabled]='!counter' [ngClass]="{'disabled': !counter}" class="timer-button"
+      (click)="lapTimeSplit()">Lap</button>
+    <button class="timer-button" (click)="clearTimer()">Clear</button>
+    <br>
+    <div *ngFor="let lap of laps;let i = index">
+      <div> &#9873; <b>Lap {{i+1}} ::</b> {{lap}}</div>
+      <br>
+    </div>
+  </div>
+</div>
