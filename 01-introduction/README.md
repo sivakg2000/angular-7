@@ -1,6 +1,10 @@
-# intro-01
+# Angular Introductions
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+- Basic Routing with router-outlet
+- Basic Interpolation
+- Property Binding []
+- Event Binding ()
+- Two Way Binding [()]
 
 ## Development server
 
