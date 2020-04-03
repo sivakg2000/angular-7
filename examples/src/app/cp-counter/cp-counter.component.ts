@@ -31,6 +31,7 @@ export class CpCounterComponent implements OnInit, OnDestroy {
     console.log(changes["start"]);
     if (changes["start"].currentValue) {
       this.startTimer();
+      this.showForward = true;
       this.showBackward = true;
     } else {
       this.clearTimer();
