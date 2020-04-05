@@ -3,7 +3,7 @@
 | Type   | pipe                  | Examples                                                                                     | Syntax                                    |
 | ------ | --------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------- |
 | String | None                  | Test system                                                                                  | `{{name}}`                                |
-|        | lowercase             | test system                                                                                  | `{{name | lowercase}}`                    |
+|        | lowercase             | test system                                                                                  | `{{name \| lowercase}}`                    |
 |        | uppercase             | TEST SYSTEM                                                                                  | `{{name | uppercase}}`                    |
 |        | titlecase             | Test System                                                                                  | `{{name | titlecase}}`                    |
 |        | slice:3               | t System                                                                                     | `{{name | slice:3}}`                      |
