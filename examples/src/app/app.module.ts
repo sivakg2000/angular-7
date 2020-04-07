@@ -7,6 +7,7 @@ import { MenuComponent } from "./menu/menu.component";
 import { CpCounterComponent } from "./cp-counter/cp-counter.component";
 import { TestComponent } from "./test/test.component";
 import { CounterComponent } from "./counter/counter.component";
+import { ReadExcelComponent } from './read-excel/read-excel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CounterComponent } from "./counter/counter.component";
     MenuComponent,
     CpCounterComponent,
     TestComponent,
-    CounterComponent
+    CounterComponent,
+    ReadExcelComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
