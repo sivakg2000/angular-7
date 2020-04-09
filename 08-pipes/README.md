@@ -29,3 +29,5 @@
 |        | date:'medium'         | Apr 5, 2020, 11:58:25 PM                                      | `{{myDate \| date:'medium'}}`              |
 |        | date:'mediumDate'     | Apr 5, 2020                                                   | `{{myDate \| date:'mediumDate'}}`          |
 |        | date:'mediumTime'     | 11:58:25 PM                                                   | `{{myDate \| date:'mediumTime'}}`          |
+| Custom |                       |                                                               |                                            |
+| Custom | greeting              | Hi Test System                                                | `{{name \| greeting}}`                     |
